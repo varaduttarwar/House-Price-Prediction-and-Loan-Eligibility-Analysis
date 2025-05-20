@@ -1,0 +1,88 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    background-image: url('/static/house_bg.jpg');
+}
+
+/* Container Styling */
+.container {
+    width: 45%;
+    height: 350px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 80px;
+    transition: 0.3s ease-in-out;
+    border: 3px solid white;
+    animation: glowing-border 2s infinite alternate;
+}
+
+/* Glowing Border Animation */
+@keyframes glowing-border {
+    0% {
+        box-shadow: 0 0 10px white;
+    }
+    100% {
+        box-shadow: 0 0 20px cyan;
+    }
+}
+
+/* Glowing Text */
+.glowing-text {
+    font-size: 28px;
+    margin-bottom: 50px;
+    animation: glowing-text 2s infinite alternate;
+}
+
+/* Text Glow Animation */
+@keyframes glowing-text {
+    0% {
+        color: white;
+        text-shadow: 0 0 5px cyan;
+    }
+    100% {
+        color: cyan;
+        text-shadow: 0 0 10px white;
+    }
+}
+
+/* Button Styling */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Move buttons lower */
+}
+
+.btn {
+    width: 180px;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+}
+
+/* Button Hover & Click Effect */
+.btn:hover {
+    background: #218838;
+    box-shadow: 0 0 15px cyan;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background: #1e7e34;
+    transform: scale(0.95);
+}

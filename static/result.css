@@ -1,0 +1,49 @@
+body {
+    background-image: url('/static/loan.png');
+    background-size: 100% 100%;  /* Stretch image to fill the entire screen */
+    background-repeat: no-repeat;  /* Prevent image repetition */
+    background-attachment: fixed;  /* Keep image fixed when scrolling */
+    background-position: center;  /* Center the image */
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;  /* Ensure full height */
+    width: 100vw;   /* Ensure full width */
+}
+
+.container {
+    width: 40%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Change Prediction Result to Orange */
+h1 {
+    color: orange;
+    font-size: 28px;
+}
+
+/* Increase Font Size for Loan Status Message */
+p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Change Go Back button to Light Green */
+button {
+    background-color: lightgreen;
+    color: black;  /* Keep text readable */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #90ee90;  /* Slightly darker green on hover */
+}

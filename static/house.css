@@ -1,0 +1,84 @@
+body {
+    background-image: url('/static/house.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Title */
+h1 {
+    color: #ff6600; /* Orange color for the title */
+  
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Main container */
+.container {
+    width: 60%;
+    height: auto;  /* Auto height to fit content */
+    max-height: 600px;  /* Prevents excessive height */
+    overflow-y: auto;  /* Scroll if needed */
+    background: rgba(0, 0, 0, 0.8);  /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    border: 10px solid black;  /* Solid black border */
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Labels */
+label {
+    width: 45%;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Inputs - Dark Gray/Black Theme */
+input {
+    width: 45%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #444;  /* Darker gray border */
+    background: #222;  /* Dark gray input background */
+    color: white;  /* White text for visibility */
+    transition: 0.3s;
+}
+
+/* Input focus effect */
+input:focus {
+    background: #333;  /* Slightly lighter dark gray */
+    border-color: #ff6600;  /* Orange highlight */
+    outline: none;
+    transform: scale(1.02);
+}
+
+/* Predict Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Hover effect */
+button:hover {
+    background: #e65c00;
+}
+
+

@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    background-image: url('/static/home.jpg');
+}
+
+.container {
+    width: 45%;
+    height: 350px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 80px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    
+    border: 3px solid black; /* Base black border */
+    box-shadow: 0 0 10px black; /* Initial shadow */
+    
+    animation: border-glow 1.5s infinite alternate; /* Continuous glowing effect */
+}
+
+/* Glowing border effect */
+@keyframes border-glow {
+    0% { border-color: black; box-shadow: 0 0 15px rgb(255, 153, 0); }
+    100% { border-color: black; box-shadow: 0 0 25px rgb(0, 225, 255); }
+}
+
+/* Title */
+h1 {
+    font-size: 36px;  /* Increased font size */
+    margin-bottom: 80px;
+    color: cyan;  /* Set to a static color */
+    text-shadow: 0 0 10px cyan;  /* Keep the glow effect but not animated */
+}
+
+/* Button styling */
+button {
+    width: 50%;
+    padding: 12px;
+    background: #28a745;
+    color: black;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Hover effect on button */
+button:hover {
+    background: #21885b;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.872);
+}
+
+/* Position buttons below the middle */
+.button-container {
+    position: absolute;
+    bottom: 70px; /* Move buttons higher (was 40px) */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
